@@ -17,7 +17,7 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
   const [show, setShow] = useState(false);
@@ -44,27 +44,27 @@ function App() {
             backgroundImage: "url('/Background/Pattern.png')",
             backgroundRepeat: "repeat",
             zIndex: -1,
-            animation: "moveBg 40s linear infinite"
+            animation: "moveBg 40s linear infinite",
           },
           "@keyframes moveBg": {
             from: {
-              backgroundPosition: "0px 0px"
+              backgroundPosition: "0px 0px",
             },
             to: {
-              backgroundPosition: "0px 2000px"
-            }
-          }
+              backgroundPosition: "0px 2000px",
+            },
+          },
         }}
       >
         <Navbar />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Projects/Game" element={<Game />} />
-            <Route path="/Projects/Shader" element={<Shader />} />
-            <Route path="/Projects/Tool" element={<Tool />} />
-            <Route path="/AboutMe" element={<AboutMe />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Projects/Game.tsx" element={<Game />} />
+            <Route path="/Projects/Shader.tsx" element={<Shader />} />
+            <Route path="/Projects/Tool.tsx" element={<Tool />} />
+            <Route path="/AboutMe.tsx" element={<AboutMe />} />
+            <Route path="/Contact.tsx" element={<Contact />} />
           </Routes>
           {show && (
             <Fab
@@ -79,14 +79,14 @@ function App() {
                 zIndex: 1000,
                 bgcolor: theme.palette.background.tab,
                 "&:hover": {
-                  bgcolor: theme.palette.primary.light
-                }
+                  bgcolor: theme.palette.primary.light,
+                },
               }}
             >
               <ArrowUpwardIcon
                 sx={{
                   color: theme.palette.background.nav,
-                  fontSize: 35
+                  fontSize: 35,
                 }}
               />
             </Fab>
