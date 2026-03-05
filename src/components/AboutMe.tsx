@@ -5,12 +5,12 @@ import {
   useTheme,
   Typography,
   Divider,
-  Avatar
+  Avatar,
 } from "@mui/material";
 
 const AboutMe = () => {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("lg"));
+  const _isSmallScreen = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
     <>
@@ -21,7 +21,7 @@ const AboutMe = () => {
           px: { xs: 2, md: 50 },
           display: "flex",
           justifyContent: "center",
-          flexDirection: "column"
+          flexDirection: "column",
         }}
       >
         <Paper
@@ -30,14 +30,14 @@ const AboutMe = () => {
             px: { xs: 3, md: 8 },
             py: { xs: 4, md: 2 },
             borderRadius: 4,
-            bgcolor: theme.palette.background.card
+            bgcolor: theme.palette.background.card,
           }}
         >
           <Typography
             sx={{
               color: theme.palette.background.tab,
               textAlign: "center",
-              fontWeight: 700
+              fontWeight: 700,
             }}
             variant="h3"
           >
@@ -49,7 +49,7 @@ const AboutMe = () => {
                 width: "70%",
                 mt: 2,
                 mb: 5,
-                bgcolor: theme.palette.text.primary
+                bgcolor: theme.palette.text.primary,
               }}
             />
           </Box>
@@ -58,7 +58,7 @@ const AboutMe = () => {
               display: "flex",
               justifyContent: "center",
               flexDirection: "row",
-              pb: 3
+              pb: 3,
             }}
           >
             <Avatar
@@ -67,7 +67,7 @@ const AboutMe = () => {
               sx={{
                 width: 300,
                 height: 300,
-                border: 2
+                border: 2,
               }}
             />
             <Box sx={{ ml: 6, alignContent: "center" }}>
