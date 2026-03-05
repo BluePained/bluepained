@@ -55,11 +55,15 @@ const Contact = () => {
               }}
             />
           </Box>
-          <Box sx={{ ml: 19, alignContent: "center" }}>
-            <Typography sx={{ mb: 2, whiteSpace: "pre-line" }}>
-              {`Email: bluepanied.work@gmail.com
+          <Box sx={{ px: { xs: 2, md: 19 } }}>
+            <Typography variant="body1" sx={{ mb: 1 }}>
+              Email: bluepainted.work@gmail.com
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 1 }}>
               Mobile: 063-414-9561
-              Facebook: จีโร่ นอน (@sleepless.jiro)`}
+            </Typography>
+            <Typography variant="body1">
+              Facebook: จีโร่ นอน (@sleepless.jiro)
             </Typography>
           </Box>
         </Paper>

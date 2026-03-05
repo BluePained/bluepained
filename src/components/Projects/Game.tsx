@@ -112,7 +112,14 @@ const Game = () => {
           flexDirection: "column",
         }}
       >
-        <Box sx={{ display: "flex", justifyContent: "end", mr: 2 }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "end",
+            mr: 2,
+            flexWrap: "wrap",
+          }}
+        >
           {tabs.map((tab) => {
             const isActive = currentPath === tab.link;
             const isHovered = hoveredTab === tab.link;

@@ -59,7 +59,8 @@ const AboutMe = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              flexDirection: "row",
+              flexDirection: { xs: "column", md: "row" },
+              alignItems: { xs: "center" },
               pb: 3,
             }}
           >
