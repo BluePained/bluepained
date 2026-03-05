@@ -10,7 +10,6 @@ import Tool from "./components/Projects/Tool";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 function App() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("lg"));
@@ -60,11 +59,11 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Projects/Game.tsx" element={<Game />} />
-            <Route path="/Projects/Shader.tsx" element={<Shader />} />
-            <Route path="/Projects/Tool.tsx" element={<Tool />} />
-            <Route path="/AboutMe.tsx" element={<AboutMe />} />
-            <Route path="/Contact.tsx" element={<Contact />} />
+            <Route path="/Projects/Game" element={<Game />} />
+            <Route path="/Projects/Shader" element={<Shader />} />
+            <Route path="/Projects/Tool" element={<Tool />} />
+            <Route path="/AboutMe" element={<AboutMe />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
           {show && (
             <Fab
